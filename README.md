@@ -131,7 +131,9 @@ To run this project, you need to install the following packages:
 To install these packages, you can use the following command in your terminal:
 
 ```pyrhon runnable
+
 pip install pandas matplotlib openpyxl
+
 ```
 
 If you are using PyCharm, you can also install these packages by opening the project and navigating to File > Settings > Project: [project name] > Python Interpreter. Here, you can click on the + button to add a package, and then search for and install the required packages.
