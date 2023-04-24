@@ -288,8 +288,39 @@ print(dataset4["gender"])
 ```python
 print(dataset4[["names", "ages"]])
 ```
-#### filtration using loc method
+#### Filtration using loc method
 ```python
 dataset4["ages"] = pd.to_numeric(dataset4["ages"], errors="coerce")
 print(dataset4.loc[dataset4["ages"] > 18, ["ages", "names", "gender"]])
+```
+# Reading From CSV File and viewing related functions
+```python
+import pandas as pd
+```
+### To import data from CSV file which means "Comma Separated Values" we will use read_csv(and file name and destination)
+#### index_col = 1, means dont show the default index
+```python
+data = pd.read_csv("data/customers-100.csv", index_col=1, parse_dates=False)
+print(data)
+```
+#### Now to display some specific column to user
+```python
+data = pd.DataFrame(data)
+```
+```python
+print(data["Website"])
+print(data["Index"])
+print(data["Company"])
+print(data["Email"])
+```
+### Related Function of DataFrame
+#### 💻 Describe
+#### 💻 info
+#### 💻 min
+#### 💻 max etc
+```python
+print(data.max())
+print(data.max())
+print(data.describe())
+print(data.info)
 ```
