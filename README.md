@@ -324,3 +324,19 @@ print(data.max())
 print(data.describe())
 print(data.info)
 ```
+
+```python
+
+data = pd.DataFrame({"Names": ["syab", "adeel", "fayaz"], "Age":[21,16,25], "Phone Number": [123,456,789]})
+print(data)
+
+```
+## Selection of specific column
+```python
+print(data["Names"])
+print(data["Age"])
+print(data["Phone Number"])
+
+print(data.iloc[1,1])
+
+```
