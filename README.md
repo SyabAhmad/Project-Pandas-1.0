@@ -259,3 +259,37 @@ dataset4["ages"] = pd.to_numeric(dataset4["ages"], errors="coerce")
 
 print(dataset4.loc[dataset4["ages"] > 18, ["ages", "names", "gender"]])
 ```
+
+## Viewing Datasets in Pandas
+
+
+```python
+
+import pandas as pd
+dataset4 = pd.DataFrame([['ages', "names", "gender"], [21, "Syab", "male"], [13, "zeyad", "male"],[15, "rayan", "male"], [45, "marya", "female"]], columns=['ages', "names", "gender"])
+```
+#### if we want to show all the data set
+```python
+print(dataset4)
+```
+#### if want to display name only
+```python
+print(dataset4["names"])
+```
+#### if ages then
+```python
+print(dataset4["ages"])
+```
+#### if gender then
+```python
+print(dataset4["gender"])
+```
+#### if two columns multiple then
+```python
+print(dataset4[["names", "ages"]])
+```
+#### filtration using loc method
+```python
+dataset4["ages"] = pd.to_numeric(dataset4["ages"], errors="coerce")
+print(dataset4.loc[dataset4["ages"] > 18, ["ages", "names", "gender"]])
+```
