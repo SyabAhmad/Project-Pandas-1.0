@@ -33,6 +33,14 @@ Time series-specific functionality: date range generation and frequency conversi
 
 ##### Binary installers for the latest released version are available at the Python Package Index (PyPI) and on Conda.
 
+```
+# conda
+conda install pandas
+```
+```
+# or PyPI
+pip install pandas
+```
 
 # There are two type Dataframes
 
