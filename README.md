@@ -42,7 +42,19 @@ conda install pandas
 pip install pandas
 ```
 
-# There are two type Dataframes
+## Documentation
+
+The official documentation is hosted on PyData.org: https://pandas.pydata.org/pandas-docs/stable
+
+## Background
+
+Work on pandas started at AQR (a quantitative hedge fund) in 2008 and has been under active development since then.
+
+## Getting Help
+
+For usage questions, the best place to go to is StackOverflow. Further, general questions and discussions can also take place on the pydata mailing list.
+
+## There are two type Dataframes
 
 ```Series``` and ```DataFrames```
 
