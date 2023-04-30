@@ -200,59 +200,59 @@ Once the packages are installed, you can run the project and start analyzing the
 
 ```python runable
 
-import pandas as pd
+//import pandas as pd
 
-import matplotlib.pyplot as plt
+//import matplotlib.pyplot as plt
 
-import openpyxl as sa
+//import openpyxl as sa
 
-# we will use same csv file
+//# we will use same csv file
 
-# customerdata = pd.read_csv('customers-100.csv', index_col= 0, parse_dates=True)
+//# customerdata = pd.read_csv('customers-100.csv', index_col= 0, parse_dates=True)
 
-userdata = pd.read_excel('pandaData.xlsx', index_col=0)
+//userdata = pd.read_excel('pandaData.xlsx', index_col=0)
 
 
-#customerdata = customerdata[["Phone 1", "Phone 2"]].head(5)
+//#customerdata = customerdata[["Phone 1", "Phone 2"]].head(5)
 
-print(userdata)
+//print(userdata)
 
-userdata = userdata[['Age', 'Gender']]
+//userdata = userdata[['Age', 'Gender']]
 
-print(userdata)
+//print(userdata)
 
-userdata.plot()
+//userdata.plot()
 
-plt.title("Friends Data")
+//plt.title("Friends Data")
 
-plt.ylabel("Names")
+//plt.ylabel("Names")
 
-plt.xlabel("Ages")
+//plt.xlabel("Ages")
 
-plt.show()
+//plt.show()
 
 ```
 # Matpolotlib.pyplot second example
 
 ```python runable
 
-import pandas as pd
+//import pandas as pd
 
-import matplotlib.pyplot as plt
+//import matplotlib.pyplot as plt
 
-numericData = pd.read_excel('data/numricData.xlsx', index_col=0)
+//numericData = pd.read_excel('data/numricData.xlsx', index_col=0)
 
-print(numericData)
+//print(numericData)
 
-numericData.plot()
+//numericData.plot()
 
-plt.title("Cars Data")
+//plt.title("Cars Data")
 
-plt.xlabel("Names of Cars")
+//plt.xlabel("Names of Cars")
 
-plt.ylabel("Values of Cars")
+//plt.ylabel("Values of Cars")
 
-plt.show()
+//plt.show()
 
 ```
 
@@ -384,7 +384,7 @@ data = pd.DataFrame({"Names": ["syab", "adeel", "fayaz"], "Age":[21,16,25], "Pho
 print(data)
 
 ```
-## Selection of specific column
+############################# Selection of specific column
 ```python
 print(data["Names"])
 print(data["Age"])
@@ -398,40 +398,40 @@ print(data.iloc[1,1])
 import pandas as pd
 print("Filtering Data in Pandas")
 ```
-## Filtering Data in Pandas
-### there are 3 types of filtration in pandas
-#### 💻 Boolean
-#### 💻 Query like SQL
-#### 💻 Row based on specific Values
+################################# Filtering Data in Pandas
+################################# there are 3 types of filtration in pandas
+################################# 💻 Boolean
+################################# 💻 Query like SQL
+################################ 💻 Row based on specific Values
 
-### Boolean
+################################ Boolean
 ```python
 data = pd.DataFrame({"Names": ["syed", "syab", "ahmad", "shah"], "Age": [21, 23, 25, 29], "Gender": ["male", "male", "male", "male"]})
 
 print(data)
 print(data["Names"])
 ```
-#### Boolean format to filter Data (Conditions)
+################################## Boolean format to filter Data (Conditions)
 ```python
 print(data[data["Age"] > 23])
 ```
-#### Query selection filtration of Data
+################################## Query selection filtration of Data
 ```python
 print(data.query("Gender == 'male'"))
 
 print(data.query("Names == 'Syab'"))
 print(data.query("Names == 'syab'"))
 ```
-#### Filtration of Row by specific Value
+#################################### Filtration of Row by specific Value
 ```python
 print(data[data["Names"].isin(["syed", "syab"])])
 
 ```
 
-### There are to Types of Iteration in Pandas when it comes to Row Iterations
-#### iterrows()
-#### itertuples()
-### Let see
+###################################### There are to Types of Iteration in Pandas when it comes to Row Iterations
+###################################### iterrows()
+#################################### itertuples()
+#################################### Let see
 ```python
 
 import pandas as pd
@@ -444,7 +444,7 @@ for index, rows in data.iterrows():
 
 ```
 
-### 2nd Method (itertuples)
+##################################### 2nd Method (itertuples)
 
 ```python
 
@@ -454,4 +454,5 @@ for rows in data.itertuples():
 
 ```
 
-## More Updates coming Soon Stay tune
+
+######################################## More Updates coming Soon Stay tune
