@@ -33,11 +33,11 @@ Time series-specific functionality: date range generation and frequency conversi
 
 ##### Binary installers for the latest released version are available at the Python Package Index (PyPI) and on Conda.
 
-```
+```python
 # conda
 conda install pandas
 ```
-```
+```python
 # or PyPI
 pip install pandas
 ```
@@ -66,14 +66,14 @@ For usage questions, the best place to go to is StackOverflow. Further, general 
 
 # To import Panda 
 
-```python runable
+```python
 import pandas as pd
 
 ```
 
 # To Create Series
 
-```python runable
+```python
 import pandas as pd
 # will create a series of data
 data = pd.Series([1,2,3,4,5,6,7,8])
@@ -84,14 +84,14 @@ print(data)
 
 # To print type of data
 
-```python runable
+```python
 # will print the type of data objects
 print(type(data))
 
 ```
 # To create Dataframe
 
-```python runable
+```python
 import pandas as pd
 # will create a series of data
 data = pd.Dataframe(["Column1": [1,2,3,4,5,6], "Column2": [1,2,3,4,5,6]], index=['a','b', 'c', 'd', 'e', 'f'])
@@ -102,14 +102,14 @@ print(data)
 
 # To print type of data
 
-```python runable
+```python
 # will print the type of data objects
 print(type(data))
 
 ```
 
 # To create Seriese from day 1 and day 2 only
-```python runable
+```python
 import pandas as pd
 
 calories = {"day1": 420, "day2": 380, "day3": 390}
@@ -120,7 +120,7 @@ print(myvar)
 ```
 
 # Example of Data Frame # #1
-```python runable
+```python
 import pandas as pd
 import numpy as np
 print("Creation of Data Frames")
@@ -135,7 +135,7 @@ print(data)
 
 ```
 # Example of Data Frame # #1 Continue
-```python runable
+```python
 
 # to print specific column
 print(data["Age"])
@@ -183,7 +183,7 @@ To run this project, you need to install the following packages:
 
 To install these packages, you can use the following command in your terminal:
 
-```pyrhon runnable
+```pyrhon
 pip install pandas matplotlib openpyxl
 ```
 
@@ -198,61 +198,61 @@ Once the packages are installed, you can run the project and start analyzing the
 
 # example of matplotlib.pyplot
 
-```python runable
+```python
 
-//import pandas as pd
+import pandas as pd
 
-//import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 
-//import openpyxl as sa
+import openpyxl as sa
 
-//# we will use same csv file
+# we will use same csv file
 
-//# customerdata = pd.read_csv('customers-100.csv', index_col= 0, parse_dates=True)
+# customerdata = pd.read_csv('customers-100.csv', index_col= 0, parse_dates=True)
 
-//userdata = pd.read_excel('pandaData.xlsx', index_col=0)
+userdata = pd.read_excel('pandaData.xlsx', index_col=0)
 
 
-//#customerdata = customerdata[["Phone 1", "Phone 2"]].head(5)
+#customerdata = customerdata[["Phone 1", "Phone 2"]].head(5)
 
-//print(userdata)
+print(userdata)
 
-//userdata = userdata[['Age', 'Gender']]
+userdata = userdata[['Age', 'Gender']]
 
-//print(userdata)
+print(userdata)
 
-//userdata.plot()
+userdata.plot()
 
-//plt.title("Friends Data")
+plt.title("Friends Data")
 
-//plt.ylabel("Names")
+plt.ylabel("Names")
 
-//plt.xlabel("Ages")
+plt.xlabel("Ages")
 
-//plt.show()
+plt.show()
 
 ```
 # Matpolotlib.pyplot second example
 
-```python runable
+```python
 
-//import pandas as pd
+import pandas as pd
 
-//import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 
-//numericData = pd.read_excel('data/numricData.xlsx', index_col=0)
+numericData = pd.read_excel('data/numricData.xlsx', index_col=0)
 
-//print(numericData)
+print(numericData)
 
-//numericData.plot()
+numericData.plot()
 
-//plt.title("Cars Data")
+plt.title("Cars Data")
 
-//plt.xlabel("Names of Cars")
+plt.xlabel("Names of Cars")
 
-//plt.ylabel("Values of Cars")
+plt.ylabel("Values of Cars")
 
-//plt.show()
+plt.show()
 
 ```
 
