@@ -384,7 +384,7 @@ data = pd.DataFrame({"Names": ["syab", "adeel", "fayaz"], "Age":[21,16,25], "Pho
 print(data)
 
 ```
-############################# Selection of specific column
+### Selection of specific column
 ```python
 print(data["Names"])
 print(data["Age"])
@@ -398,39 +398,39 @@ print(data.iloc[1,1])
 import pandas as pd
 print("Filtering Data in Pandas")
 ```
-################################# Filtering Data in Pandas
-################################# there are 3 types of filtration in pandas
-################################# 💻 Boolean
-################################# 💻 Query like SQL
-################################ 💻 Row based on specific Values
+### Filtering Data in Pandas
+### there are 3 types of filtration in pandas
+### 💻 Boolean
+### 💻 Query like SQL
+### 💻 Row based on specific Values
 
-################################ Boolean
+### Boolean
 ```python
 data = pd.DataFrame({"Names": ["syed", "syab", "ahmad", "shah"], "Age": [21, 23, 25, 29], "Gender": ["male", "male", "male", "male"]})
 
 print(data)
 print(data["Names"])
 ```
-################################## Boolean format to filter Data (Conditions)
+### Boolean format to filter Data (Conditions)
 ```python
 print(data[data["Age"] > 23])
 ```
-################################## Query selection filtration of Data
+### Query selection filtration of Data
 ```python
 print(data.query("Gender == 'male'"))
 
 print(data.query("Names == 'Syab'"))
 print(data.query("Names == 'syab'"))
 ```
-#################################### Filtration of Row by specific Value
+### Filtration of Row by specific Value
 ```python
 print(data[data["Names"].isin(["syed", "syab"])])
 
 ```
 
-###################################### There are to Types of Iteration in Pandas when it comes to Row Iterations
-###################################### iterrows()
-#################################### itertuples()
+### There are to Types of Iteration in Pandas when it comes to Row Iterations
+### iterrows()
+### itertuples()
 #################################### Let see
 ```python
 
@@ -444,7 +444,7 @@ for index, rows in data.iterrows():
 
 ```
 
-##################################### 2nd Method (itertuples)
+### 2nd Method (itertuples)
 
 ```python
 
@@ -455,11 +455,13 @@ for rows in data.itertuples():
 ```
 
 ### Data Visualization in Python using matplotlib.pyplot
+
 ```python
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 import random as rdm
+
 xAxis = np.array(rdm.randint(1, 10))
 yAxis = np.array(rdm.randint(1, 10))
 
